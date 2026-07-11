@@ -17,4 +17,8 @@ public class BulletScript : MonoBehaviour
     {
         
     }
+
+    private void OnCollisionEnter2D() {
+        Destroy(gameObject, 0.01f);
+    }
 }

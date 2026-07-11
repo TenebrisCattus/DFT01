@@ -462,3 +462,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GunPivotScript
   bullet: {fileID: 7413719821608205428, guid: 684a177f8e0d503409f88f277cee68b1, type: 3}
   fireDelay: 0.1
+  ReloadDelay: 0
+  LoadTime: 0
+  PistolAmmo: 16
