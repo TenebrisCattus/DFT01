@@ -472,18 +472,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 8623805874262567349, guid: b1e9fbfdb354ad34d8b3d0b99ba124f5, type: 3}
-      propertyPath: fireDelay
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8623805874262567349, guid: b1e9fbfdb354ad34d8b3d0b99ba124f5, type: 3}
-      propertyPath: PistolAmmo
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 8623805874262567349, guid: b1e9fbfdb354ad34d8b3d0b99ba124f5, type: 3}
-      propertyPath: PistolMagazine
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 8978657026327675555, guid: b1e9fbfdb354ad34d8b3d0b99ba124f5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.01
