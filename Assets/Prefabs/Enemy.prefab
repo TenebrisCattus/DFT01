@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 3771249043091243514}
   - component: {fileID: 4362148501053091163}
   - component: {fileID: 3697101931094461084}
-  m_Layer: 3
+  - component: {fileID: -7552715256361380094}
+  m_Layer: 7
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -158,6 +159,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &-7552715256361380094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469645894161950352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1f1268b216f27a439d5720fd027514e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyBaseScript
+  HP: 1
 --- !u!1 &6579601250793696344
 GameObject:
   m_ObjectHideFlags: 0
@@ -168,7 +182,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3259797822095778186}
   - component: {fileID: 4138823876946739705}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Arms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -259,7 +273,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6232920364396374139}
   - component: {fileID: 6595751107865507774}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: ArmsPivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -294,4 +308,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059f49e75b8306f478a94699b0acf08d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ArmsPivotScript
-  Player: {fileID: 469645894161950352, guid: b1e9fbfdb354ad34d8b3d0b99ba124f5, type: 3}
