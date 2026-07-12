@@ -8,9 +8,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7552715256361380094, guid: 8b9ec3422b0db3d47a936f2edc92f16d, type: 3}
+      propertyPath: PathUpdateRate
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 469645894161950352, guid: 8b9ec3422b0db3d47a936f2edc92f16d, type: 3}
       propertyPath: m_Name
-      value: Enemy
+      value: Enemy Melee
       objectReference: {fileID: 0}
     - target: {fileID: 8978657026327675555, guid: 8b9ec3422b0db3d47a936f2edc92f16d, type: 3}
       propertyPath: m_LocalPosition.x

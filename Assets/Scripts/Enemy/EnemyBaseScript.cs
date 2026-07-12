@@ -1,18 +1,29 @@
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemyBaseScript : MonoBehaviour
 {
-    [SerializeField] float HP;
+    [SerializeField] private float HP;
+    [SerializeField] private float PathUpdateRate;
+
+    private NavMeshAgent agent;
+    private float nextUpdateTime;
 
     void Start()
     {
-        
+        agent = GetComponent<NavMeshAgent>();
+        agent.updateRotation = false;
+        agent.updateUpAxis = false;
     }
 
     void Update()
     {
         if (HP <= 0) {
             Death();
+        }
+        if (Time.time >= nextUpdateTime && PlayerMainScript.Game_player != null) {
+            FindTheWayToPlayer();
+            nextUpdateTime = Time.time + PathUpdateRate;
         }
     }
 
@@ -25,5 +36,9 @@ public class EnemyBaseScript : MonoBehaviour
 
     void Death() { 
         Destroy(gameObject);
+    }
+
+    void FindTheWayToPlayer() {
+        agent.SetDestination(PlayerMainScript.Game_player.transform.position);
     }
 }
