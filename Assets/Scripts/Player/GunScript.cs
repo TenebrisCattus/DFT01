@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class GunScript : MonoBehaviour
 {
-    [SerializeField] private Transform gun_trns;
+    [SerializeField] private GunPivotScript Gun_moth;
 
     private SpriteRenderer spriteRenderer;
 
@@ -13,7 +13,7 @@ public class GunScript : MonoBehaviour
 
     void Update()
     {
-        if (180-gun_trns.eulerAngles.z < 0)
+        if (Gun_moth.GetDir().y > 0)
         {
             spriteRenderer.sortingOrder = 99;
         }

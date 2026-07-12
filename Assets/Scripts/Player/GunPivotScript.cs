@@ -19,8 +19,9 @@ public class GunPivotScript : MonoBehaviour
     private Camera mainCamera;
     private float nextFireTime;
     private float nextReloadTime;
-    int PistolMagazine = PistolMagazineMax;
-    int RifleMagazine = RifleMagazineMax;
+    private int PistolMagazine = PistolMagazineMax;
+    private int RifleMagazine = RifleMagazineMax;
+    private Vector2 dir;
     void Start()
     {
         mainCamera = Camera.main;
@@ -30,9 +31,16 @@ public class GunPivotScript : MonoBehaviour
     {
         // Техническое
         Vector3 mousePos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
-        Vector2 dir = new Vector2(mousePos.x - transform.position.x, mousePos.y - transform.position.y).normalized;
+        dir = new Vector2(mousePos.x - transform.position.x, mousePos.y - transform.position.y).normalized;
         float angle = Mathf.Atan2(dir.x, dir.y) * Mathf.Rad2Deg * -1 - 90;
-        transform.rotation = Quaternion.Euler(0, 0, angle);
+        
+        if (dir.x < 0)
+        {
+            transform.rotation = Quaternion.Euler(0, 0, angle);
+        }
+        else {
+            transform.rotation = Quaternion.Euler(0, 180, 180-angle);
+        }
         // Выбор оружия
         if (Input.GetAxis("Select1") > 0)
         {
@@ -129,5 +137,9 @@ public class GunPivotScript : MonoBehaviour
             RifleMagazine += RifleAmmo;
             RifleAmmo = 0;
         }
+    }
+
+    public Vector2 GetDir() {
+        return dir;
     }
 }

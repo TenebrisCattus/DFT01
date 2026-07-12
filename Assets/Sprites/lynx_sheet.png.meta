@@ -89,6 +89,9 @@ TextureImporter:
   - first:
       213: -6462935148502011430
     second: lynx_sheet_28
+  - first:
+      213: 2452873081285974536
+    second: lynx_sheet_29
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -530,10 +533,10 @@ TextureImporter:
       name: lynx_sheet_15
       rect:
         serializedVersion: 2
-        x: 226
-        y: 186
-        width: 32
-        height: 31
+        x: 227
+        y: 187
+        width: 31
+        height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -596,10 +599,10 @@ TextureImporter:
       name: lynx_sheet_18
       rect:
         serializedVersion: 2
-        x: 101
-        y: 96
-        width: 39
-        height: 36
+        x: 265
+        y: 162
+        width: 19
+        height: 9
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -618,10 +621,10 @@ TextureImporter:
       name: lynx_sheet_19
       rect:
         serializedVersion: 2
-        x: 150
-        y: 97
-        width: 86
-        height: 31
+        x: 101
+        y: 96
+        width: 39
+        height: 36
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -640,10 +643,10 @@ TextureImporter:
       name: lynx_sheet_20
       rect:
         serializedVersion: 2
-        x: 128
-        y: 83
-        width: 9
-        height: 7
+        x: 150
+        y: 97
+        width: 86
+        height: 31
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -662,10 +665,10 @@ TextureImporter:
       name: lynx_sheet_21
       rect:
         serializedVersion: 2
-        x: 160
-        y: 74
-        width: 22
-        height: 9
+        x: 128
+        y: 83
+        width: 9
+        height: 7
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -681,13 +684,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lynx_sheet_24
+      name: lynx_sheet_22
       rect:
         serializedVersion: 2
-        x: 212
-        y: 73
-        width: 22
-        height: 11
+        x: 160
+        y: 74
+        width: 21
+        height: 9
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -696,8 +699,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 23e991e434fd3b8e0800000000000000
-      internalID: -1678752755912958414
+      spriteID: b6a22cb6322f5cce0800000000000000
+      internalID: -1385435076400895381
       vertices: []
       indices: 
       edges: []
@@ -706,10 +709,10 @@ TextureImporter:
       name: lynx_sheet_25
       rect:
         serializedVersion: 2
-        x: 125
-        y: 75
-        width: 12
-        height: 7
+        x: 212
+        y: 73
+        width: 22
+        height: 11
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -725,13 +728,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lynx_sheet_27
+      name: lynx_sheet_26
       rect:
         serializedVersion: 2
-        x: 184
-        y: 74
-        width: 27
-        height: 8
+        x: 125
+        y: 75
+        width: 12
+        height: 7
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -740,8 +743,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 66a88d427d50da570800000000000000
-      internalID: 8479440095002790502
+      spriteID: 552ca7c8ecc7b4810800000000000000
+      internalID: 1750630106725532245
       vertices: []
       indices: 
       edges: []
@@ -750,9 +753,9 @@ TextureImporter:
       name: lynx_sheet_28
       rect:
         serializedVersion: 2
-        x: 124
-        y: 65
-        width: 14
+        x: 185
+        y: 74
+        width: 26
         height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -772,10 +775,32 @@ TextureImporter:
       name: lynx_sheet_29
       rect:
         serializedVersion: 2
+        x: 124
+        y: 65
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80a1b21521b5a0220800000000000000
+      internalID: 2452873081285974536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lynx_sheet_30
+      rect:
+        serializedVersion: 2
         x: 258
         y: 187
         width: 18
-        height: 28
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -784,8 +809,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5277b61f6331b148830dfe09affa2fc
-      internalID: 1277166365
+      spriteID: 5977fc3bbc00d5f44918cebe73d67736
+      internalID: 1497114105
       vertices: []
       indices: 
       edges: []
@@ -794,7 +819,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: d6299061efa34b14c99f30878681f7cd
+    spriteID: 5437bd0623234584ca7717b4b8841b9b
     internalID: 0
     vertices: []
     indices: 
@@ -826,9 +851,9 @@ TextureImporter:
       lynx_sheet_26: 1750630106725532245
       lynx_sheet_27: 8479440095002790502
       lynx_sheet_28: -6462935148502011430
-      lynx_sheet_29: 1277166365
+      lynx_sheet_29: 2452873081285974536
       lynx_sheet_3: -4726708693945063509
-      lynx_sheet_30: 1603468344
+      lynx_sheet_30: 1497114105
       lynx_sheet_4: 861822686184369892
       lynx_sheet_5: -5804479161703336463
       lynx_sheet_6: 1457249343189312904
