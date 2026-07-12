@@ -37,9 +37,11 @@ public class GunPivotScript : MonoBehaviour
         if (dir.x < 0)
         {
             transform.rotation = Quaternion.Euler(0, 0, angle);
+            PlayerMainScript.Game_player.ChooseReverX(false);
         }
         else {
             transform.rotation = Quaternion.Euler(0, 180, 180-angle);
+            PlayerMainScript.Game_player.ChooseReverX(true);
         }
         // Выбор оружия
         if (Input.GetAxis("Select1") > 0)

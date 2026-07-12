@@ -173,7 +173,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffc9dc65deb6b464581b84bd6d788201, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMainScript
+  Eyes: {fileID: 7634396748691067544}
   moveSpeed: 10
+  LookUp: {fileID: -4948726301971767462, guid: f608de95bf6c8334f86739d5d39f8007, type: 3}
+  LookDown: {fileID: -1965253477447152703, guid: f608de95bf6c8334f86739d5d39f8007, type: 3}
 --- !u!1 &4251326449004048206
 GameObject:
   m_ObjectHideFlags: 0
