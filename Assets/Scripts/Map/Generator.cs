@@ -11,7 +11,7 @@ public class Generator : MonoBehaviour
     {
         navMeshSurface = GetComponent<NavMeshPlus.Components.NavMeshSurface>();
         navMeshSurface.BuildNavMesh();
-        Instantiate(Enemy, transform.position, transform.rotation);
+        Instantiate(Enemy, transform.position, Quaternion.identity);
     }
 
     // Update is called once per frame

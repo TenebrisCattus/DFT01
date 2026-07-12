@@ -1,0 +1,842 @@
+fileFormatVersion: 2
+guid: f608de95bf6c8334f86739d5d39f8007
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1965253477447152703
+    second: lynx_sheet_0
+  - first:
+      213: -138055235114748489
+    second: lynx_sheet_1
+  - first:
+      213: -2430505130716640320
+    second: lynx_sheet_2
+  - first:
+      213: -4726708693945063509
+    second: lynx_sheet_3
+  - first:
+      213: 861822686184369892
+    second: lynx_sheet_4
+  - first:
+      213: -5804479161703336463
+    second: lynx_sheet_5
+  - first:
+      213: 1457249343189312904
+    second: lynx_sheet_6
+  - first:
+      213: -2854235107878668204
+    second: lynx_sheet_7
+  - first:
+      213: 1245268634342152775
+    second: lynx_sheet_8
+  - first:
+      213: -7706506590433957978
+    second: lynx_sheet_9
+  - first:
+      213: 122591428098773501
+    second: lynx_sheet_10
+  - first:
+      213: -8454995192671300229
+    second: lynx_sheet_11
+  - first:
+      213: -4948726301971767462
+    second: lynx_sheet_12
+  - first:
+      213: 6645866994004456345
+    second: lynx_sheet_13
+  - first:
+      213: 4928064013910398924
+    second: lynx_sheet_14
+  - first:
+      213: -8822292260627754854
+    second: lynx_sheet_15
+  - first:
+      213: 2997475928553434743
+    second: lynx_sheet_16
+  - first:
+      213: -2926819431252825623
+    second: lynx_sheet_17
+  - first:
+      213: 7335494893229657620
+    second: lynx_sheet_18
+  - first:
+      213: 1431851984212575260
+    second: lynx_sheet_19
+  - first:
+      213: -5593585032835073703
+    second: lynx_sheet_20
+  - first:
+      213: 7828608554193094782
+    second: lynx_sheet_21
+  - first:
+      213: -1385435076400895381
+    second: lynx_sheet_22
+  - first:
+      213: -3809248112837410607
+    second: lynx_sheet_23
+  - first:
+      213: -1678752755912958414
+    second: lynx_sheet_24
+  - first:
+      213: 6862018292339686402
+    second: lynx_sheet_25
+  - first:
+      213: 1750630106725532245
+    second: lynx_sheet_26
+  - first:
+      213: 8479440095002790502
+    second: lynx_sheet_27
+  - first:
+      213: -6462935148502011430
+    second: lynx_sheet_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: lynx_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 196
+        width: 85
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cb4927ef540ab4e0800000000000000
+      internalID: -1965253477447152703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lynx_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 327
+        width: 39
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b53a9fbe77851ef0800000000000000
+      internalID: -138055235114748489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lynx_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 328
+        width: 45
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cbced2067c154ed0800000000000000
+      internalID: -2430505130716640320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lynx_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 327
+        width: 102
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba767ac6c7b576eb0800000000000000
+      internalID: -4726708693945063509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lynx_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 286
+        width: 94
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ee646dba2fc5fb00800000000000000
+      internalID: 861822686184369892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lynx_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 253
+        width: 86
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f5f384b4f8527fa0800000000000000
+      internalID: -5804479161703336463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lynx_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 286
+        width: 94
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88568f98e80393410800000000000000
+      internalID: 1457249343189312904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lynx_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 220
+        width: 86
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4587171ba48b368d0800000000000000
+      internalID: -2854235107878668204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lynx_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 225
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74a56e7a935184110800000000000000
+      internalID: 1245268634342152775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lynx_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 250
+        width: 94
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a72af9361dfc0590800000000000000
+      internalID: -7706506590433957978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lynx_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 221
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df1d55c114883b100800000000000000
+      internalID: 122591428098773501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lynx_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 224
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7511333ba2d9aa80800000000000000
+      internalID: -8454995192671300229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lynx_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 4
+        width: 85
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5f1758d5a7925bb0800000000000000
+      internalID: -4948726301971767462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lynx_sheet_13
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 181
+        width: 86
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 993f02ad1dcda3c50800000000000000
+      internalID: 6645866994004456345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lynx_sheet_14
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 188
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc7d3835c10046440800000000000000
+      internalID: 4928064013910398924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lynx_sheet_15
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 186
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a90da947eebe09580800000000000000
+      internalID: -8822292260627754854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lynx_sheet_16
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 145
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77e2638c97c299920800000000000000
+      internalID: 2997475928553434743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lynx_sheet_17
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 137
+        width: 94
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e9e676fb39d167d0800000000000000
+      internalID: -2926819431252825623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lynx_sheet_18
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 96
+        width: 39
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41e45a28db9ecc560800000000000000
+      internalID: 7335494893229657620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lynx_sheet_19
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 97
+        width: 86
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c14cde91bc5fed310800000000000000
+      internalID: 1431851984212575260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lynx_sheet_20
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 83
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9597ce87c089f52b0800000000000000
+      internalID: -5593585032835073703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lynx_sheet_21
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 74
+        width: 22
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e788346900ec4ac60800000000000000
+      internalID: 7828608554193094782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lynx_sheet_24
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 73
+        width: 22
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23e991e434fd3b8e0800000000000000
+      internalID: -1678752755912958414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lynx_sheet_25
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 75
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20cb325c749ca3f50800000000000000
+      internalID: 6862018292339686402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lynx_sheet_27
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 74
+        width: 27
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66a88d427d50da570800000000000000
+      internalID: 8479440095002790502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lynx_sheet_28
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 65
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad1b62b79ba0f46a0800000000000000
+      internalID: -6462935148502011430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lynx_sheet_29
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 187
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5277b61f6331b148830dfe09affa2fc
+      internalID: 1277166365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d6299061efa34b14c99f30878681f7cd
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      lynx_sheet_0: -1965253477447152703
+      lynx_sheet_1: -138055235114748489
+      lynx_sheet_10: 122591428098773501
+      lynx_sheet_11: -8454995192671300229
+      lynx_sheet_12: -4948726301971767462
+      lynx_sheet_13: 6645866994004456345
+      lynx_sheet_14: 4928064013910398924
+      lynx_sheet_15: -8822292260627754854
+      lynx_sheet_16: 2997475928553434743
+      lynx_sheet_17: -2926819431252825623
+      lynx_sheet_18: 7335494893229657620
+      lynx_sheet_19: 1431851984212575260
+      lynx_sheet_2: -2430505130716640320
+      lynx_sheet_20: -5593585032835073703
+      lynx_sheet_21: 7828608554193094782
+      lynx_sheet_22: -1385435076400895381
+      lynx_sheet_23: -3809248112837410607
+      lynx_sheet_24: -1678752755912958414
+      lynx_sheet_25: 6862018292339686402
+      lynx_sheet_26: 1750630106725532245
+      lynx_sheet_27: 8479440095002790502
+      lynx_sheet_28: -6462935148502011430
+      lynx_sheet_29: 1277166365
+      lynx_sheet_3: -4726708693945063509
+      lynx_sheet_30: 1603468344
+      lynx_sheet_4: 861822686184369892
+      lynx_sheet_5: -5804479161703336463
+      lynx_sheet_6: 1457249343189312904
+      lynx_sheet_7: -2854235107878668204
+      lynx_sheet_8: 1245268634342152775
+      lynx_sheet_9: -7706506590433957978
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
