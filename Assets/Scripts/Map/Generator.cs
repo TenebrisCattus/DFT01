@@ -17,6 +17,9 @@ public class Generator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetButtonDown("F"))
+        {
+            Instantiate(Enemy, transform.position, Quaternion.identity);
+        }
     }
 }
