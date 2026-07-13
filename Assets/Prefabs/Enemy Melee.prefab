@@ -9,6 +9,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -7552715256361380094, guid: 8b9ec3422b0db3d47a936f2edc92f16d, type: 3}
+      propertyPath: LookUp
+      value: 
+      objectReference: {fileID: -6878672361536862745, guid: 574c4b0cacd3d9842aced1f83e8bd575, type: 3}
+    - target: {fileID: -7552715256361380094, guid: 8b9ec3422b0db3d47a936f2edc92f16d, type: 3}
+      propertyPath: LookDown
+      value: 
+      objectReference: {fileID: -350947705974155306, guid: 574c4b0cacd3d9842aced1f83e8bd575, type: 3}
+    - target: {fileID: -7552715256361380094, guid: 8b9ec3422b0db3d47a936f2edc92f16d, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}

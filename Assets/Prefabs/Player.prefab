@@ -175,7 +175,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMainScript
   Eyes: {fileID: 7634396748691067544}
   moveSpeed: 10
-  LookUp: {fileID: -4948726301971767462, guid: f608de95bf6c8334f86739d5d39f8007, type: 3}
+  LookUp: {fileID: 122591428098773501, guid: f608de95bf6c8334f86739d5d39f8007, type: 3}
   LookDown: {fileID: -1965253477447152703, guid: f608de95bf6c8334f86739d5d39f8007, type: 3}
 --- !u!1 &4251326449004048206
 GameObject:
@@ -396,7 +396,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 101
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 1457249343189312904, guid: f608de95bf6c8334f86739d5d39f8007, type: 3}
+  m_Sprite: {fileID: -138055235114748489, guid: f608de95bf6c8334f86739d5d39f8007, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -419,6 +419,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GunScript
   Gun_moth: {fileID: 8623805874262567349}
+  Gun_pistol: {fileID: -138055235114748489, guid: f608de95bf6c8334f86739d5d39f8007, type: 3}
+  Gun_rifle: {fileID: 1457249343189312904, guid: f608de95bf6c8334f86739d5d39f8007, type: 3}
+  Gun_shotgun: {fileID: -5804479161703336463, guid: f608de95bf6c8334f86739d5d39f8007, type: 3}
 --- !u!1 &7634396748691067544
 GameObject:
   m_ObjectHideFlags: 0
@@ -500,12 +503,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 102
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -1385435076400895381, guid: f608de95bf6c8334f86739d5d39f8007, type: 3}
+  m_Sprite: {fileID: 7828608554193094782, guid: f608de95bf6c8334f86739d5d39f8007, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.39, y: 0.36}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -557,6 +560,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GunPivotScript
   bullet: {fileID: 7413719821608205428, guid: 684a177f8e0d503409f88f277cee68b1, type: 3}
   ReloadDelay: 0
+  armsScript: {fileID: 8732221715348044796}
   PistolFireDelay: 0.2
   RifleFireDelay: 0.1
   RifleAmmo: 90

@@ -2,7 +2,9 @@ using UnityEngine;
 
 public class ArmsPivotScript : MonoBehaviour
 {
+    [SerializeField] private EnemyBaseScript MotherEnemy;
     private Vector2 dir;
+
     void Start()
     {
 
@@ -16,10 +18,12 @@ public class ArmsPivotScript : MonoBehaviour
         if (dir.x < 0)
         {
             transform.rotation = Quaternion.Euler(0, 0, angle);
+            MotherEnemy.ChooseReverX(false);
         }
         else
         {
             transform.rotation = Quaternion.Euler(0, 180, 180 - angle);
+            MotherEnemy.ChooseReverX(true);
         }
     }
 
