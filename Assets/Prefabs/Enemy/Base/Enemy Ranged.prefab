@@ -59,5 +59,27 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 469645894161950352, guid: 8b9ec3422b0db3d47a936f2edc92f16d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8804683130344720993}
   m_SourcePrefab: {fileID: 100100000, guid: 8b9ec3422b0db3d47a936f2edc92f16d, type: 3}
+--- !u!1 &2797994487920014031 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 469645894161950352, guid: 8b9ec3422b0db3d47a936f2edc92f16d, type: 3}
+  m_PrefabInstance: {fileID: 2328639571887608927}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8804683130344720993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2797994487920014031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cc51e1827b9fa49a19ae57e01d7ec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyRangedScript
+  bullet: {fileID: 1823234338787287888, guid: 41078ff1a4a06c9478baa30f601e2d97, type: 3}
+  fireDelay: 1

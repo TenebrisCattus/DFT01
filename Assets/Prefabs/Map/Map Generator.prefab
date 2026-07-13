@@ -46,7 +46,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f509bef3f6f758b4fb74843885180eaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Generator
-  Enemy: {fileID: 412060106530044355, guid: 37fc18e80af0f3f48a5cc52142b62520, type: 3}
+  Enemy1: {fileID: 6358772781210491761, guid: 3099910b580db08418166a97ed8f7c9e, type: 3}
+  Enemy2: {fileID: 1559564853865726698, guid: 4cc3915225490564d8d325272b78cc2c, type: 3}
+  Enemy3: {fileID: 5794447466110835073, guid: 366aadb9c07d842409ac77ff5b23ecfe, type: 3}
+  Enemy4: {fileID: 8215279998936083632, guid: 28ee577954321254496e2909ad840125, type: 3}
 --- !u!114 &537621245347584306
 MonoBehaviour:
   m_ObjectHideFlags: 0
