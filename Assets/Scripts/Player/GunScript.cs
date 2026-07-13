@@ -8,6 +8,8 @@ public class GunScript : MonoBehaviour
     [SerializeField] private Sprite Gun_shotgun;
 
     private SpriteRenderer spriteRenderer;
+    private string weapon;
+    private string prevweapon;
 
     void Start()
     {
@@ -25,9 +27,14 @@ public class GunScript : MonoBehaviour
             spriteRenderer.sortingOrder = 101;
             PlayerMainScript.Game_player.ChooseSideLookUpTrue(false);
         }
+        weapon = Gun_moth.GetWeaponName();
+        if (weapon != prevweapon) {
+            ChooseSprite(weapon);
+            prevweapon = weapon;
+        }
     }
 
-    public void ChooseSprite(string weapon) {
+    private void ChooseSprite(string weapon) {
         switch (weapon) {
             case "wpn_pistol":
                 spriteRenderer.sprite = Gun_pistol;

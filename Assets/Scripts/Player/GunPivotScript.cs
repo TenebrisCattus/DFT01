@@ -4,7 +4,6 @@ public class GunPivotScript : MonoBehaviour
 {
     [SerializeField] private GameObject bullet;
     [SerializeField] private float ReloadDelay = 1;
-    [SerializeField] private GunScript armsScript;
     // Pistol
     [SerializeField] private float PistolFireDelay = 0.4f;
     [SerializeField] static private int PistolMagazineMax = 8;
@@ -57,7 +56,6 @@ public class GunPivotScript : MonoBehaviour
         {
             Weapon = "wpn_shotgun";
         }
-        armsScript.ChooseSprite(Weapon);
 
         //Оружие  
         if (Weapon == "wpn_pistol")
@@ -146,4 +144,6 @@ public class GunPivotScript : MonoBehaviour
     public Vector2 GetDir() {
         return dir;
     }
+
+    public string GetWeaponName() { return Weapon; }
 }
