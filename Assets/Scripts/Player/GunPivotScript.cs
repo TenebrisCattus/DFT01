@@ -15,8 +15,13 @@ public class GunPivotScript : MonoBehaviour
     [SerializeField] private int RifleAmmo = 90;
     [SerializeField] private int PistolAmmo = 16;
     [SerializeField] private string Weapon = "wpn_pistol";
+    //Sounds
+    [SerializeField] private AudioClip FirePistolSound;
+    [SerializeField] private AudioClip FireRifleSound;
+    [SerializeField] private AudioClip FireShotgunSound;
 
     private Camera mainCamera;
+    private AudioSource AudioSource;
     private float nextFireTime;
     private float nextReloadTime;
     private int PistolMagazine = PistolMagazineMax;
@@ -25,6 +30,7 @@ public class GunPivotScript : MonoBehaviour
     void Start()
     {
         mainCamera = Camera.main;
+        AudioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -95,7 +101,7 @@ public class GunPivotScript : MonoBehaviour
         {
             Instantiate(bullet, transform.position, transform.rotation);
             PistolMagazine = PistolMagazine - 1;
-
+            AudioSource.PlayOneShot(FirePistolSound);
         }
         
 
@@ -123,6 +129,7 @@ public class GunPivotScript : MonoBehaviour
         {
             Instantiate(bullet, transform.position, transform.rotation);
             RifleMagazine = RifleMagazine - 1;
+            AudioSource.PlayOneShot(FireRifleSound);
         }
     }
 
