@@ -488,15 +488,23 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8623805874262567349, guid: b1e9fbfdb354ad34d8b3d0b99ba124f5, type: 3}
+      propertyPath: RifleAmmo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8623805874262567349, guid: b1e9fbfdb354ad34d8b3d0b99ba124f5, type: 3}
       propertyPath: fireDelay
       value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8623805874262567349, guid: b1e9fbfdb354ad34d8b3d0b99ba124f5, type: 3}
       propertyPath: PistolAmmo
-      value: 16
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8623805874262567349, guid: b1e9fbfdb354ad34d8b3d0b99ba124f5, type: 3}
       propertyPath: ReloadDelay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8623805874262567349, guid: b1e9fbfdb354ad34d8b3d0b99ba124f5, type: 3}
+      propertyPath: ShotgunAmmo
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8623805874262567349, guid: b1e9fbfdb354ad34d8b3d0b99ba124f5, type: 3}

@@ -10,10 +10,12 @@ public class GunPivotScript : MonoBehaviour
     // Rifle
     [SerializeField] private float RifleFireDelay = 0.2f;
     [SerializeField] static private int RifleMagazineMax = 30;
-
+    // Shotgun
+    [SerializeField] static private int ShotgunMagazineMax = 6;
     //Inventory
     [SerializeField] private int RifleAmmo = 90;
     [SerializeField] private int PistolAmmo = 16;
+    [SerializeField] private int ShotgunAmmo = 36;
     [SerializeField] private string Weapon = "wpn_pistol";
     //Sounds
     [SerializeField] private AudioClip FirePistolSound;
@@ -26,10 +28,12 @@ public class GunPivotScript : MonoBehaviour
     private float nextReloadTime;
     private int PistolMagazine = PistolMagazineMax;
     private int RifleMagazine = RifleMagazineMax;
+    private int ShotgunMagazine = ShotgunMagazineMax;
     private Vector2 dir;
     private Animator GunAnim;
     private float ToLoad;
     private bool IsBusy;
+    //private bool NextAmmo = true;
     void Start()
     {
         mainCamera = Camera.main;
@@ -81,6 +85,11 @@ public class GunPivotScript : MonoBehaviour
             FireRifle(dir);
             nextFireTime = Time.time + RifleFireDelay;
         }
+        else if ((Weapon == "wpn_shotgun") && (Input.GetAxis("Fire1") > 0) && (Time.time >= nextFireTime) && !IsBusy)
+        {
+            FireShotgun(dir);
+            nextFireTime = Time.time + 0.9f;
+        }
 
         if (Input.GetAxis("Reload") > 0)
         {
@@ -98,11 +107,20 @@ public class GunPivotScript : MonoBehaviour
                 Invoke("ReloadRifle", ToLoad);
                 IsBusy = true;
             }
-                     
+            else if (Weapon == "wpn_shotgun" && Time.time >= nextReloadTime && !IsBusy && ShotgunAmmo > 0)
+            {
+
+                ReloadShotgun();
+                IsBusy = true;
+                
+            }
+
         }
         Debug.Log("Текущее оружие: " + Weapon);
         Debug.Log("Патроны пистолет: " + PistolMagazine);
         Debug.Log("Патроны автомат: " + RifleMagazine);
+        Debug.Log("Патроны Дробовик: " + ShotgunMagazine);
+        Debug.Log("Патроны Дробовик все: " + ShotgunAmmo);
     }
     private void FirePistol(Vector2 dir) {
         if (PistolMagazine > 0)
@@ -132,8 +150,6 @@ public class GunPivotScript : MonoBehaviour
             nextReloadTime = Time.time + 0.5f;
             IsBusy = false;
         }
-        
-
     }
 
     private void FireRifle(Vector2 dir)
@@ -165,10 +181,61 @@ public class GunPivotScript : MonoBehaviour
             IsBusy = false;
         }
     }
+    private void FireShotgun(Vector2 dir)
+    {
+        if (ShotgunMagazine > 0)
+        {
+            ShotgunMagazine -= 1;
+            Instantiate(bullet, transform.position, transform.rotation * Quaternion.Euler(0,0,-10) );
+            Instantiate(bullet, transform.position, transform.rotation * Quaternion.Euler(0, 0, 10));
+            Instantiate(bullet, transform.position, transform.rotation);
+            Instantiate(bullet, transform.position, transform.rotation * Quaternion.Euler(0, 0, -20));
+            Instantiate(bullet, transform.position, transform.rotation * Quaternion.Euler(0, 0, 20));
+            AudioSource.PlayOneShot(FireShotgunSound);
+            GunAnim.SetTrigger("Shoot");
+        }
+    }
+
 
     public Vector2 GetDir() {
         return dir;
     }
+    /*private void ReloadShotgun()
+    {
+        while (ShotgunMagazine <= ShotgunMagazineMax)
+        {
+            if (ShotgunMagazine == ShotgunMagazineMax && NextAmmo)
+            {
+                nextReloadTime = Time.time + 0.1f;
+                IsBusy = false;
+                break;
+                NextAmmo = true;
+            }
+            else if (NextAmmo)
+            {
+                ShotgunMagazine += 1;
+                ShotgunAmmo -= 1;
+                NextAmmo = false;
+                Invoke("NextAmmoFunc", 0.3f);
+            }
 
+        }
+
+    }
+    */
+    private void ReloadShotgun()
+    {
+        if (ShotgunMagazine < ShotgunMagazineMax && ShotgunAmmo > 0)
+        {
+            IsBusy = true;
+            ShotgunMagazine += 1;
+            ShotgunAmmo -= 1;
+            Invoke("ReloadShotgun", 0.3f);
+        }
+        else
+        {
+            IsBusy=false;
+        }
+    }
     public string GetWeaponName() { return Weapon; }
 }
