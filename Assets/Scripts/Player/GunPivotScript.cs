@@ -4,7 +4,6 @@ public class GunPivotScript : MonoBehaviour
 {
     [SerializeField] private GameObject Gun;
     [SerializeField] private GameObject bullet;
-    [SerializeField] private float ReloadDelay = 1;
     // Pistol
     [SerializeField] private float PistolFireDelay = 0.4f;
     [SerializeField] static private int PistolMagazineMax = 8;
@@ -29,6 +28,8 @@ public class GunPivotScript : MonoBehaviour
     private int RifleMagazine = RifleMagazineMax;
     private Vector2 dir;
     private Animator GunAnim;
+    private float ToLoad;
+    private bool IsBusy;
     void Start()
     {
         mainCamera = Camera.main;
@@ -53,21 +54,21 @@ public class GunPivotScript : MonoBehaviour
             PlayerMainScript.Game_player.ChooseReverX(true);
         }
         // Выбор оружия
-        if (Input.GetAxis("Select1") > 0)
+        if (Input.GetAxis("Select1") > 0 && !IsBusy)
         {
             Weapon = "wpn_pistol";
         }
-        else if (Input.GetAxis("Select2") > 0)
+        else if (Input.GetAxis("Select2") > 0 && !IsBusy)
         {
             Weapon = "wpn_rifle";
         }
-        else if (Input.GetAxis("Select3") > 0)
+        else if (Input.GetAxis("Select3") > 0 && !IsBusy)
         {
             Weapon = "wpn_shotgun";
         }
 
         //Оружие  
-        if (Weapon == "wpn_pistol")
+        if (Weapon == "wpn_pistol" && !IsBusy)
         {
             if (Input.GetMouseButtonDown(0) && Time.time >= nextFireTime)
             {
@@ -75,23 +76,27 @@ public class GunPivotScript : MonoBehaviour
                 nextFireTime = Time.time + PistolFireDelay;
             }
         }
-        else if ((Weapon == "wpn_rifle") && (Input.GetAxis("Fire1") > 0) && (Time.time >= nextFireTime))
+        else if ((Weapon == "wpn_rifle") && (Input.GetAxis("Fire1") > 0) && (Time.time >= nextFireTime) && !IsBusy)
         {
             FireRifle(dir);
             nextFireTime = Time.time + RifleFireDelay;
         }
 
         if (Input.GetAxis("Reload") > 0)
-        {   
-            if(Weapon == "wpn_pistol" && Time.time >= nextReloadTime)
+        {
+            
+            if(Weapon == "wpn_pistol" && Time.time >= nextReloadTime && !IsBusy)
             {
-                ReloadPistol(dir);
-                nextReloadTime = Time.time + ReloadDelay;
+                ToLoad = 0.6f;
+                Invoke("ReloadPistol", ToLoad);
+                IsBusy = true;
+
             }
-            else if(Weapon == "wpn_rifle" && Time.time >= nextReloadTime)
+            else if(Weapon == "wpn_rifle" && Time.time >= nextReloadTime && !IsBusy)
             {
-                ReloadRifle(dir);
-                nextReloadTime = Time.time + ReloadDelay;
+                ToLoad = 0.9f;
+                Invoke("ReloadRifle", ToLoad);
+                IsBusy = true;
             }
                      
         }
@@ -110,18 +115,22 @@ public class GunPivotScript : MonoBehaviour
         
 
     }
-    private void ReloadPistol(Vector2 dir)
+    private void ReloadPistol()
     {
         int AmmoToReload = PistolMagazineMax - PistolMagazine;
         if((PistolAmmo - AmmoToReload) > 0)
         {
             PistolMagazine += AmmoToReload;
             PistolAmmo -= AmmoToReload;
+            nextReloadTime = Time.time + 0.5f;
+            IsBusy = false;
         }
         else if(AmmoToReload >= PistolAmmo)
         {
             PistolMagazine += PistolAmmo;
             PistolAmmo = 0;
+            nextReloadTime = Time.time + 0.5f;
+            IsBusy = false;
         }
         
 
@@ -138,18 +147,22 @@ public class GunPivotScript : MonoBehaviour
         }
     }
 
-    private void ReloadRifle(Vector2 dir)
+    private void ReloadRifle()
     {
         int AmmoToReload = RifleMagazineMax - RifleMagazine;
         if ((RifleAmmo - AmmoToReload) > 0)
         {
             RifleMagazine += AmmoToReload;
             RifleAmmo -= AmmoToReload;
+            nextReloadTime = Time.time + 0.5f;
+            IsBusy = false;
         }
         else if (AmmoToReload >= RifleAmmo)
         {
             RifleMagazine += RifleAmmo;
             RifleAmmo = 0;
+            nextReloadTime = Time.time + 0.5f;
+            IsBusy = false;
         }
     }
 
