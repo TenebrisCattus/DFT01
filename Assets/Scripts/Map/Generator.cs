@@ -39,7 +39,7 @@ public class Generator : MonoBehaviour
         if (Input.GetAxis("Debug4") > 0 && Time.time >= nextTick)
         {
             Instantiate(Enemy4, transform.position, Quaternion.identity);
-            nextTick = Time.time + 0.5f;
+            nextTick = Time.time + 0.1f;
         }
     }
 }
