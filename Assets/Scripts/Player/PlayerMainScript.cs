@@ -8,10 +8,11 @@ public class PlayerMainScript : MonoBehaviour
     [SerializeField] private float moveSpeed;
     [SerializeField] private Sprite LookUp;
     [SerializeField] private Sprite LookDown;
+    [SerializeField] private SpriteRenderer rbSprite;
 
     private Rigidbody2D rb;
     private Vector2 moveInput;
-    private SpriteRenderer rbSprite;
+    private Animator mainAnim;
 
     public static PlayerMainScript Game_player { get; private set; }
 
@@ -29,7 +30,7 @@ public class PlayerMainScript : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rbSprite = GetComponent<SpriteRenderer>();
+        mainAnim =rbSprite.GetComponent<Animator>();
     }
 
     private void Update()
@@ -39,6 +40,14 @@ public class PlayerMainScript : MonoBehaviour
         if (moveInput.sqrMagnitude > 1)
         {
             moveInput.Normalize();
+        }
+        if (Mathf.Abs(moveInput.x) + Mathf.Abs(moveInput.y) > 0)
+        {
+            mainAnim.SetBool("Walk", true);
+        }
+        else 
+        {
+            mainAnim.SetBool("Walk", false);
         }
     }
 
