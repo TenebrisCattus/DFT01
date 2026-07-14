@@ -381,6 +381,7 @@ GameObject:
   - component: {fileID: 3259797822095778186}
   - component: {fileID: 4138823876946739705}
   - component: {fileID: 8732221715348044796}
+  - component: {fileID: 4581247310182367918}
   m_Layer: 3
   m_Name: Gun
   m_TagString: Untagged
@@ -478,6 +479,28 @@ MonoBehaviour:
   Gun_pistol: {fileID: -138055235114748489, guid: f608de95bf6c8334f86739d5d39f8007, type: 3}
   Gun_rifle: {fileID: 1457249343189312904, guid: f608de95bf6c8334f86739d5d39f8007, type: 3}
   Gun_shotgun: {fileID: -5804479161703336463, guid: f608de95bf6c8334f86739d5d39f8007, type: 3}
+--- !u!95 &4581247310182367918
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6579601250793696344}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 849ef451b791c084f838c6c75a2d0c27, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7634396748691067544
 GameObject:
   m_ObjectHideFlags: 0
@@ -638,6 +661,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85e2ccf55de0029488495c7caba99983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GunPivotScript
+  Gun: {fileID: 6579601250793696344}
   bullet: {fileID: 7413719821608205428, guid: 684a177f8e0d503409f88f277cee68b1, type: 3}
   ReloadDelay: 0
   PistolFireDelay: 0.2

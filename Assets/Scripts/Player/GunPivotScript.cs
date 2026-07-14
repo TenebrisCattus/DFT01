@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class GunPivotScript : MonoBehaviour
 {
+    [SerializeField] private GameObject Gun;
     [SerializeField] private GameObject bullet;
     [SerializeField] private float ReloadDelay = 1;
     // Pistol
@@ -27,10 +28,12 @@ public class GunPivotScript : MonoBehaviour
     private int PistolMagazine = PistolMagazineMax;
     private int RifleMagazine = RifleMagazineMax;
     private Vector2 dir;
+    private Animator GunAnim;
     void Start()
     {
         mainCamera = Camera.main;
         AudioSource = GetComponent<AudioSource>();
+        GunAnim = Gun.GetComponent<Animator>();
     }
 
     void Update()
@@ -102,6 +105,7 @@ public class GunPivotScript : MonoBehaviour
             Instantiate(bullet, transform.position, transform.rotation);
             PistolMagazine = PistolMagazine - 1;
             AudioSource.PlayOneShot(FirePistolSound);
+            GunAnim.SetTrigger("Shoot");
         }
         
 
@@ -130,6 +134,7 @@ public class GunPivotScript : MonoBehaviour
             Instantiate(bullet, transform.position, transform.rotation);
             RifleMagazine = RifleMagazine - 1;
             AudioSource.PlayOneShot(FireRifleSound);
+            GunAnim.SetTrigger("ShootRifle");
         }
     }
 
