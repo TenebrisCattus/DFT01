@@ -76,6 +76,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6833979989917357755, guid: 8b9ec3422b0db3d47a936f2edc92f16d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2438855884402461768, guid: 574c4b0cacd3d9842aced1f83e8bd575, type: 3}
     - target: {fileID: 6955166474031281000, guid: 8b9ec3422b0db3d47a936f2edc92f16d, type: 3}
       propertyPath: m_Enabled
       value: 1

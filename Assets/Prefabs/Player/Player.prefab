@@ -685,11 +685,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GunPivotScript
   Gun: {fileID: 6579601250793696344}
   bullet: {fileID: 7413719821608205428, guid: 684a177f8e0d503409f88f277cee68b1, type: 3}
-  ReloadDelay: 0
   PistolFireDelay: 0.2
   RifleFireDelay: 0.1
   RifleAmmo: 90
-  PistolAmmo: 16
+  PistolAmmo: 24
+  ShotgunAmmo: 36
   Weapon: wpn_pistol
   FirePistolSound: {fileID: 8300000, guid: 40b8df1652f4854439fb65fb812d06b0, type: 3}
   FireRifleSound: {fileID: 8300000, guid: 97bed22f5c8aa084881a22803d84b7d6, type: 3}

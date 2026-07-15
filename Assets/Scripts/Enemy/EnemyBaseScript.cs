@@ -8,17 +8,20 @@ public class EnemyBaseScript : MonoBehaviour
     [SerializeField] private GameObject Eyes;
     [SerializeField] private Sprite LookUp;
     [SerializeField] private Sprite LookDown;
+    [SerializeField] private SpriteRenderer rbSprite;
 
     private NavMeshAgent agent;
     private float nextUpdateTime;
-    private SpriteRenderer rbSprite;
+    private Animator mainAnim;
+    private Rigidbody2D rb;
 
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
-        rbSprite = GetComponent<SpriteRenderer>();
+        mainAnim = rbSprite.GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     void Update()
@@ -30,6 +33,15 @@ public class EnemyBaseScript : MonoBehaviour
             FindTheWayToPlayer();
             nextUpdateTime = Time.time + PathUpdateRate;
         }
+        if (agent.velocity.magnitude > 0)
+        {
+            mainAnim.SetBool("Walk", true);
+        }
+        else 
+        {
+            mainAnim.SetBool("Walk", false);
+        }
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

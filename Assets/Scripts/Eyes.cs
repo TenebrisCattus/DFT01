@@ -30,6 +30,5 @@ public class Eyes : MonoBehaviour
             change = 0;
         }
         transform.localPosition = new Vector3(transform.localPosition.x, standartY - change, transform.localPosition.z);
-        Debug.Log(GAtrans.rotation.eulerAngles.z);
     }
 }
