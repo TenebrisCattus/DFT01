@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Melee Generic
       objectReference: {fileID: 0}
+    - target: {fileID: 412060106530044355, guid: 37fc18e80af0f3f48a5cc52142b62520, type: 3}
+      propertyPath: m_TagString
+      value: EnemyMelee
+      objectReference: {fileID: 0}
     - target: {fileID: 3991668173464608425, guid: 37fc18e80af0f3f48a5cc52142b62520, type: 3}
       propertyPath: m_Sprite
       value: 

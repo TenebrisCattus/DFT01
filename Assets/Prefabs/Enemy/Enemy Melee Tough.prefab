@@ -12,6 +12,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Melee Tough
       objectReference: {fileID: 0}
+    - target: {fileID: 412060106530044355, guid: 37fc18e80af0f3f48a5cc52142b62520, type: 3}
+      propertyPath: m_TagString
+      value: EnemyMelee
+      objectReference: {fileID: 0}
+    - target: {fileID: 1449094158013909073, guid: 37fc18e80af0f3f48a5cc52142b62520, type: 3}
+      propertyPath: HP
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1449094158013909073, guid: 37fc18e80af0f3f48a5cc52142b62520, type: 3}
       propertyPath: LookUp
       value: 
@@ -32,6 +40,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -8579418048005124685, guid: 574c4b0cacd3d9842aced1f83e8bd575, type: 3}
+    - target: {fileID: 7185173277084249147, guid: 37fc18e80af0f3f48a5cc52142b62520, type: 3}
+      propertyPath: m_Speed
+      value: 4.5
+      objectReference: {fileID: 0}
     - target: {fileID: 9199150854777134576, guid: 37fc18e80af0f3f48a5cc52142b62520, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

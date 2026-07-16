@@ -9,10 +9,13 @@ public class PlayerMainScript : MonoBehaviour
     [SerializeField] private Sprite LookUp;
     [SerializeField] private Sprite LookDown;
     [SerializeField] private SpriteRenderer rbSprite;
+    [SerializeField] private static int StartHP = 100;
 
     private Rigidbody2D rb;
     private Vector2 moveInput;
     private Animator mainAnim;
+    private float DamageDelay;
+    public int HP = StartHP;
 
     public static PlayerMainScript Game_player { get; private set; }
 
@@ -33,8 +36,13 @@ public class PlayerMainScript : MonoBehaviour
         mainAnim =rbSprite.GetComponent<Animator>();
     }
 
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        Debug.LogError("SADASD");
+    }
     private void Update()
     {
+        Debug.Log("HP " + HP);
         moveInput.x = Input.GetAxis("Horizontal");
         moveInput.y = Input.GetAxis("Vertical");
         if (moveInput.sqrMagnitude > 1)
@@ -49,6 +57,25 @@ public class PlayerMainScript : MonoBehaviour
         {
             mainAnim.SetBool("Walk", false);
         }
+        if (HP <= 0)
+        {
+            Death();
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("EnemyBullet"))
+        {
+            HP -= 25;
+        }
+    }
+
+    
+
+    void Death()
+    {
+        Destroy(gameObject);
     }
 
     private void FixedUpdate()
@@ -68,7 +95,7 @@ public class PlayerMainScript : MonoBehaviour
             Eyes.GetComponent<SpriteRenderer>().enabled = true;
         }
     }
-
+    
     public void ChooseReverX(bool rever) {
         rbSprite.flipX = rever;
         if (rever)
