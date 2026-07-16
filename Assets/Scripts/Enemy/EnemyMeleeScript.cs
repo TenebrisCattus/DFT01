@@ -15,8 +15,7 @@ public class EnemyMeleeScript : MonoBehaviour
     }
     private void OnCollisionStay2D(Collision2D collision)
     {
-        Debug.LogError("SADASD");
-        if (collision.gameObject.CompareTag("Player2"))
+        if (collision.gameObject.CompareTag("Player"))
         {
             PlayerMainScript.Game_player.HP -= 35;
         }

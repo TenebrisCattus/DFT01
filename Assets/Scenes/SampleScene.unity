@@ -513,6 +513,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3697101931094461084, guid: b1e9fbfdb354ad34d8b3d0b99ba124f5, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6232920364396374139, guid: b1e9fbfdb354ad34d8b3d0b99ba124f5, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1

@@ -127,5 +127,25 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 469645894161950352, guid: 8b9ec3422b0db3d47a936f2edc92f16d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2993333695041576168}
   m_SourcePrefab: {fileID: 100100000, guid: 8b9ec3422b0db3d47a936f2edc92f16d, type: 3}
+--- !u!1 &412060106530044355 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 469645894161950352, guid: 8b9ec3422b0db3d47a936f2edc92f16d, type: 3}
+  m_PrefabInstance: {fileID: 230644588525346643}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2993333695041576168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 412060106530044355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fc4467046a5d4646aa0943bcb4a0c34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyMeleeScript

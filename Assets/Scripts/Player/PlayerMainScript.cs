@@ -35,11 +35,6 @@ public class PlayerMainScript : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         mainAnim =rbSprite.GetComponent<Animator>();
     }
-
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-        Debug.LogError("SADASD");
-    }
     private void Update()
     {
         Debug.Log("HP " + HP);
