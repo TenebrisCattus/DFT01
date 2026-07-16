@@ -24,7 +24,7 @@ public class GunScript : MonoBehaviour
             PlayerMainScript.Game_player.ChooseSideLookUpTrue(true);
         }
         else {
-            spriteRenderer.sortingOrder = 101;
+            spriteRenderer.sortingOrder = 102;
             PlayerMainScript.Game_player.ChooseSideLookUpTrue(false);
         }
         weapon = Gun_moth.GetWeaponName();

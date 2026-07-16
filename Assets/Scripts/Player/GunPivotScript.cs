@@ -4,6 +4,7 @@ public class GunPivotScript : MonoBehaviour
 {
     [SerializeField] private GameObject Gun;
     [SerializeField] private GameObject bullet;
+    [SerializeField] private ReloadArmScript arm;
     // Pistol
     [SerializeField] private float PistolFireDelay = 0.4f;
     [SerializeField] static private int PistolMagazineMax = 8;
@@ -136,6 +137,7 @@ public class GunPivotScript : MonoBehaviour
     private void ReloadPistol()
     {
         int AmmoToReload = PistolMagazineMax - PistolMagazine;
+        arm.PistolReloadAnim();
         if((PistolAmmo - AmmoToReload) > 0)
         {
             PistolMagazine += AmmoToReload;
