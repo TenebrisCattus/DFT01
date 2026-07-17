@@ -14,9 +14,9 @@ public class GunPivotScript : MonoBehaviour
     // Shotgun
     [SerializeField] static private int ShotgunMagazineMax = 6;
     //Inventory
-    [SerializeField] private int RifleAmmo = 90;
-    [SerializeField] private int PistolAmmo = 16;
-    [SerializeField] private int ShotgunAmmo = 36;
+    [SerializeField] private static int RifleAmmoMax = 90;
+    [SerializeField] private static int PistolAmmoMax = 24;
+    [SerializeField] private static int ShotgunAmmoMax = 36;
     [SerializeField] private string Weapon = "wpn_pistol";
     //Sounds
     [SerializeField] private AudioClip FirePistolSound;
@@ -25,6 +25,11 @@ public class GunPivotScript : MonoBehaviour
 
     private Camera mainCamera;
     private AudioSource AudioSource;
+
+    public int RifleAmmo = RifleAmmoMax;
+    public int PistolAmmo = PistolAmmoMax;
+    public int ShotgunAmmo = ShotgunAmmoMax;
+
     private float nextFireTime;
     private float nextReloadTime;
     private int PistolMagazine = PistolMagazineMax;
@@ -118,10 +123,10 @@ public class GunPivotScript : MonoBehaviour
 
         }
         Debug.Log("Текущее оружие: " + Weapon);
-        Debug.Log("Патроны пистолет: " + PistolMagazine);
-        Debug.Log("Патроны автомат: " + RifleMagazine);
-        Debug.Log("Патроны Дробовик: " + ShotgunMagazine);
-        Debug.Log("Патроны Дробовик все: " + ShotgunAmmo);
+        Debug.Log("Патроны пистолет: " + PistolAmmo);
+        Debug.Log("Патроны автомат: " + RifleAmmo);
+        Debug.Log("Патроны Дробовик: " + ShotgunAmmo);
+
     }
     private void FirePistol(Vector2 dir) {
         if (PistolMagazine > 0)
