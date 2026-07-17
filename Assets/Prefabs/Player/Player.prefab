@@ -117,7 +117,7 @@ MonoBehaviour:
   LookUp: {fileID: 122591428098773501, guid: f608de95bf6c8334f86739d5d39f8007, type: 3}
   LookDown: {fileID: -1965253477447152703, guid: f608de95bf6c8334f86739d5d39f8007, type: 3}
   rbSprite: {fileID: 559504516029959044}
-  GunSystem: {fileID: 0}
+  GunSystem: {fileID: 8623805874262567349}
   HP: 100
 --- !u!1 &2146873482032553573
 GameObject:
