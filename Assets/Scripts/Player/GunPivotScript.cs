@@ -102,6 +102,7 @@ public class GunPivotScript : MonoBehaviour
             
             if(Weapon == "wpn_pistol" && Time.time >= nextReloadTime && !IsBusy)
             {
+                arm.PistolReloadAnim(1);
                 ToLoad = 0.6f;
                 Invoke("ReloadPistol", ToLoad);
                 IsBusy = true;
@@ -109,13 +110,13 @@ public class GunPivotScript : MonoBehaviour
             }
             else if(Weapon == "wpn_rifle" && Time.time >= nextReloadTime && !IsBusy)
             {
+                arm.RifleReloadAnim(1);
                 ToLoad = 0.9f;
                 Invoke("ReloadRifle", ToLoad);
                 IsBusy = true;
             }
             else if (Weapon == "wpn_shotgun" && Time.time >= nextReloadTime && !IsBusy && ShotgunAmmo > 0)
             {
-
                 ReloadShotgun();
                 IsBusy = true;
                 
@@ -142,7 +143,6 @@ public class GunPivotScript : MonoBehaviour
     private void ReloadPistol()
     {
         int AmmoToReload = PistolMagazineMax - PistolMagazine;
-        arm.PistolReloadAnim();
         if((PistolAmmo - AmmoToReload) > 0)
         {
             PistolMagazine += AmmoToReload;
@@ -234,6 +234,7 @@ public class GunPivotScript : MonoBehaviour
     {
         if (ShotgunMagazine < ShotgunMagazineMax && ShotgunAmmo > 0)
         {
+            arm.ShotgunReloadAnim(0.2f);
             IsBusy = true;
             ShotgunMagazine += 1;
             ShotgunAmmo -= 1;
