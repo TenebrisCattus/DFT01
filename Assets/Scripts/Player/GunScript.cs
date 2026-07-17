@@ -12,6 +12,7 @@ public class GunScript : MonoBehaviour
     [SerializeField] private Sprite Gun_shotgun_shot;
     [SerializeField] private Sprite RifleNoMag;
     [SerializeField] private Sprite ShotgunNoMag;
+    [SerializeField] private Sprite Shotgun_ccl;
 
 
     private SpriteRenderer spriteRenderer;
@@ -75,6 +76,48 @@ public class GunScript : MonoBehaviour
     }
 
     private void StopReloadShotgun()
+    {
+        spriteRenderer.sprite = Gun_shotgun;
+    }
+
+    public void StartShotPistol() {
+        spriteRenderer.sprite = Gun_pistol_shot;
+        Invoke("StopShotPistol", 0.1f);
+    }
+
+    private void StopShotPistol()
+    {
+        spriteRenderer.sprite = Gun_pistol;
+    }
+
+    public void StartShotRifle()
+    {
+        spriteRenderer.sprite = Gun_rifle_shot;
+        Invoke("StopShotRifle", 0.1f);
+    }
+
+    private void StopShotRifle()
+    {
+        spriteRenderer.sprite = Gun_rifle;
+    }
+
+    public void StartShotShotgun()
+    {
+        spriteRenderer.sprite = Gun_shotgun_shot;
+        Invoke("StopShotShotgun", 0.1f);
+    }
+    private void StopShotShotgun()
+    {
+        spriteRenderer.sprite = Gun_shotgun;
+        Invoke("LoadShotgun", 0.4f);
+    }
+
+    private void LoadShotgun()
+    {
+        spriteRenderer.sprite = Shotgun_ccl;
+        Invoke("StopLoadShotgun", 0.2f);
+    }
+    private void StopLoadShotgun()
     {
         spriteRenderer.sprite = Gun_shotgun;
     }
