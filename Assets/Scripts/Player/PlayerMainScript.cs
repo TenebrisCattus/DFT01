@@ -14,6 +14,13 @@ public class PlayerMainScript : MonoBehaviour
     [SerializeField] private GunPivotScript GunSystem;
 
 
+
+    public bool FullShotgun;
+    public bool FullRifle;
+    public bool FullPistol;
+
+
+
     private Rigidbody2D rb;
     private Vector2 moveInput;
     private Animator mainAnim;
@@ -59,6 +66,32 @@ public class PlayerMainScript : MonoBehaviour
         {
             Death();
         }
+
+        if (GunSystem.ShotgunAmmo >= GunPivotScript.ShotgunAmmoMax)
+        {
+            FullShotgun = true;
+        }
+        else
+        {
+            FullShotgun = false;
+        }
+
+        if (GunSystem.PistolAmmo >= GunPivotScript.PistolAmmoMax)
+        {
+            FullPistol = true;
+        }
+        else
+        {
+            FullPistol = false;
+        }
+        if (GunSystem.RifleAmmo >= GunPivotScript.RifleAmmoMax)
+        {
+            FullRifle = true;
+        }
+        else
+        {
+            FullRifle = false;
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -102,6 +135,43 @@ public class PlayerMainScript : MonoBehaviour
         }
         else {
             Eyes.transform.localPosition = new Vector3(-0.148f, Eyes.transform.localPosition.y, 0);
+        }
+    }
+
+    public void ShotgunAmmoPickup()
+    {   
+
+        if ((GunSystem.ShotgunAmmo + 12) >= GunPivotScript.ShotgunAmmoMax)
+        {
+            GunSystem.ShotgunAmmo = GunPivotScript.ShotgunAmmoMax;
+        }
+        else
+        {
+            GunSystem.ShotgunAmmo += 12;
+        }
+            
+    }
+    public void RifleAmmoPickup()
+    {
+        if ((GunSystem.RifleAmmo + 30) >= GunPivotScript.RifleAmmoMax)
+        {
+            GunSystem.RifleAmmo = GunPivotScript.RifleAmmoMax;
+        }
+        else
+        {
+            GunSystem.RifleAmmo += 30;
+        }
+        
+    }
+    public void PistolAmmoPickup()
+    {
+        if ((GunSystem.PistolAmmo + 8) >= GunPivotScript.PistolAmmoMax)
+        {
+            GunSystem.PistolAmmo = GunPivotScript.PistolAmmoMax;
+        }
+        else
+        {
+            GunSystem.PistolAmmo += 8;
         }
     }
 }

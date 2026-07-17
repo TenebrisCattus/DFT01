@@ -1,11 +1,11 @@
 using UnityEngine;
 
-public class ShotgunAmmoboxScript : MonoBehaviour
+public class PistolAmmoScript : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -15,11 +15,10 @@ public class ShotgunAmmoboxScript : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player") && !(PlayerMainScript.Game_player.FullShotgun))
+        if (collision.gameObject.CompareTag("Player") && !(PlayerMainScript.Game_player.FullPistol))
         {
-            PlayerMainScript.Game_player.ShotgunAmmoPickup();
+            PlayerMainScript.Game_player.PistolAmmoPickup();
             Destroy(gameObject);
         }
     }
-
 }
