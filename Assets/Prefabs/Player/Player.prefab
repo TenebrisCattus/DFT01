@@ -245,9 +245,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18a38ca2bc9a54b40a88fd8e5af90f87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ReloadArmScript
+  Gun: {fileID: 8732221715348044796}
   PistolMag: {fileID: -4948726301971767462, guid: f608de95bf6c8334f86739d5d39f8007, type: 3}
   RifleMag: {fileID: 1245268634342152775, guid: f608de95bf6c8334f86739d5d39f8007, type: 3}
   ShotgunMag: {fileID: -8454995192671300229, guid: f608de95bf6c8334f86739d5d39f8007, type: 3}
+  EmptyArm: {fileID: 0}
 --- !u!1 &3834515185381947234
 GameObject:
   m_ObjectHideFlags: 0
@@ -607,9 +609,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GunScript
   Gun_moth: {fileID: 8623805874262567349}
+  ReloadArm: {fileID: 7426510322071732104}
   Gun_pistol: {fileID: -138055235114748489, guid: f608de95bf6c8334f86739d5d39f8007, type: 3}
   Gun_rifle: {fileID: 1457249343189312904, guid: f608de95bf6c8334f86739d5d39f8007, type: 3}
   Gun_shotgun: {fileID: -5804479161703336463, guid: f608de95bf6c8334f86739d5d39f8007, type: 3}
+  Gun_pistol_shot: {fileID: -2430505130716640320, guid: f608de95bf6c8334f86739d5d39f8007, type: 3}
+  Gun_rifle_shot: {fileID: -4726708693945063509, guid: f608de95bf6c8334f86739d5d39f8007, type: 3}
+  Gun_shotgun_shot: {fileID: 861822686184369892, guid: f608de95bf6c8334f86739d5d39f8007, type: 3}
+  RifleNoMag: {fileID: -7706506590433957978, guid: f608de95bf6c8334f86739d5d39f8007, type: 3}
+  ShotgunNoMag: {fileID: 6645866994004456345, guid: f608de95bf6c8334f86739d5d39f8007, type: 3}
 --- !u!95 &4581247310182367918
 Animator:
   serializedVersion: 7
