@@ -7,7 +7,6 @@ TagManager:
   - PlayerBullet
   - EnemyBullet
   - EnemyMelee
-  - Player2
   layers:
   - Default
   - TransparentFX
