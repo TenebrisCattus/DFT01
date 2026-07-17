@@ -619,6 +619,7 @@ MonoBehaviour:
   Gun_shotgun_shot: {fileID: 861822686184369892, guid: f608de95bf6c8334f86739d5d39f8007, type: 3}
   RifleNoMag: {fileID: -7706506590433957978, guid: f608de95bf6c8334f86739d5d39f8007, type: 3}
   ShotgunNoMag: {fileID: 6645866994004456345, guid: f608de95bf6c8334f86739d5d39f8007, type: 3}
+  Shotgun_ccl: {fileID: -2854235107878668204, guid: f608de95bf6c8334f86739d5d39f8007, type: 3}
 --- !u!95 &4581247310182367918
 Animator:
   serializedVersion: 7

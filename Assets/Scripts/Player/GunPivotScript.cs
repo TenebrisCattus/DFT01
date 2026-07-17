@@ -46,12 +46,15 @@ public class GunPivotScript : MonoBehaviour
     private Animator GunAnim;
     private float ToLoad;
     private bool IsBusy;
+    private Sprite GunSprt;
+    private GunScript GunScrip;
     //private bool NextAmmo = true;
     void Start()
     {
         mainCamera = Camera.main;
         AudioSource = GetComponent<AudioSource>();
         GunAnim = Gun.GetComponent<Animator>();
+        GunScrip = Gun.GetComponent<GunScript>();
     }
 
     void Update()
@@ -142,6 +145,7 @@ public class GunPivotScript : MonoBehaviour
     private void FirePistol(Vector2 dir) {
         if (PistolMagazine > 0)
         {
+            GunScrip.StartShotPistol();
             Instantiate(bullet, transform.position, transform.rotation);
             PistolMagazine = PistolMagazine - 1;
             AudioSource.PlayOneShot(FirePistolSound);
@@ -173,6 +177,7 @@ public class GunPivotScript : MonoBehaviour
     {
         if (RifleMagazine > 0)
         {
+            GunScrip.StartShotRifle();
             Instantiate(bullet, transform.position, transform.rotation);
             RifleMagazine = RifleMagazine - 1;
             AudioSource.PlayOneShot(FireRifleSound);
@@ -202,6 +207,7 @@ public class GunPivotScript : MonoBehaviour
     {
         if (ShotgunMagazine > 0)
         {
+            GunScrip.StartShotShotgun();
             ShotgunMagazine -= 1;
             Instantiate(bullet, transform.position, transform.rotation * Quaternion.Euler(0,0,-10) );
             Instantiate(bullet, transform.position, transform.rotation * Quaternion.Euler(0, 0, 10));
