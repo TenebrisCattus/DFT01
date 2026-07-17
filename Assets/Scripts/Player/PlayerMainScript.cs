@@ -11,6 +11,9 @@ public class PlayerMainScript : MonoBehaviour
     [SerializeField] private SpriteRenderer rbSprite;
     [SerializeField] private static int StartHP = 100;
 
+    [SerializeField] private GunPivotScript GunSystem;
+
+
     private Rigidbody2D rb;
     private Vector2 moveInput;
     private Animator mainAnim;

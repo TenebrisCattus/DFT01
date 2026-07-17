@@ -117,6 +117,7 @@ MonoBehaviour:
   LookUp: {fileID: 122591428098773501, guid: f608de95bf6c8334f86739d5d39f8007, type: 3}
   LookDown: {fileID: -1965253477447152703, guid: f608de95bf6c8334f86739d5d39f8007, type: 3}
   rbSprite: {fileID: 559504516029959044}
+  GunSystem: {fileID: 0}
   HP: 100
 --- !u!1 &2146873482032553573
 GameObject:
@@ -828,13 +829,13 @@ MonoBehaviour:
   arm: {fileID: 7426510322071732104}
   PistolFireDelay: 0.2
   RifleFireDelay: 0.1
-  RifleAmmo: 90
-  PistolAmmo: 24
-  ShotgunAmmo: 36
   Weapon: wpn_pistol
   FirePistolSound: {fileID: 8300000, guid: 40b8df1652f4854439fb65fb812d06b0, type: 3}
   FireRifleSound: {fileID: 8300000, guid: 97bed22f5c8aa084881a22803d84b7d6, type: 3}
   FireShotgunSound: {fileID: 8300000, guid: 767fe2ebe9b471840883e7f5258c65f8, type: 3}
+  RifleAmmo: 90
+  PistolAmmo: 24
+  ShotgunAmmo: 36
 --- !u!82 &3295480951527543810
 AudioSource:
   m_ObjectHideFlags: 0

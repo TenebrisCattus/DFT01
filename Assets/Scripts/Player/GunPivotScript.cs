@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class GunPivotScript : MonoBehaviour
 {
+    
+
+
     [SerializeField] private GameObject Gun;
     [SerializeField] private GameObject bullet;
     [SerializeField] private ReloadArmScript arm;
@@ -14,14 +17,18 @@ public class GunPivotScript : MonoBehaviour
     // Shotgun
     [SerializeField] static private int ShotgunMagazineMax = 6;
     //Inventory
-    [SerializeField] private static int RifleAmmoMax = 90;
-    [SerializeField] private static int PistolAmmoMax = 24;
-    [SerializeField] private static int ShotgunAmmoMax = 36;
+    [SerializeField] public static int RifleAmmoMax = 90;
+    [SerializeField] public static int PistolAmmoMax = 24;
+    [SerializeField] public static int ShotgunAmmoMax = 36;
     [SerializeField] private string Weapon = "wpn_pistol";
+
     //Sounds
     [SerializeField] private AudioClip FirePistolSound;
     [SerializeField] private AudioClip FireRifleSound;
     [SerializeField] private AudioClip FireShotgunSound;
+
+    public static GunPivotScript Game_Gun { get; private set; }
+
 
     private Camera mainCamera;
     private AudioSource AudioSource;
@@ -97,36 +104,39 @@ public class GunPivotScript : MonoBehaviour
             nextFireTime = Time.time + 0.9f;
         }
 
-        if (Input.GetAxis("Reload") > 0)
+        if (Input.GetAxis("Reload") > 0 && !IsBusy)
         {
             
             if(Weapon == "wpn_pistol" && Time.time >= nextReloadTime && !IsBusy)
             {
+                IsBusy = true;
                 arm.PistolReloadAnim(1);
                 ToLoad = 0.6f;
                 Invoke("ReloadPistol", ToLoad);
-                IsBusy = true;
 
             }
             else if(Weapon == "wpn_rifle" && Time.time >= nextReloadTime && !IsBusy)
             {
+                IsBusy = true;
                 arm.RifleReloadAnim(1);
                 ToLoad = 0.9f;
                 Invoke("ReloadRifle", ToLoad);
-                IsBusy = true;
+                
             }
             else if (Weapon == "wpn_shotgun" && Time.time >= nextReloadTime && !IsBusy && ShotgunAmmo > 0)
             {
-                ReloadShotgun();
                 IsBusy = true;
+                
+                ReloadShotgun();
+                
                 
             }
 
         }
-        Debug.Log("Текущее оружие: " + Weapon);
-        Debug.Log("Патроны пистолет: " + PistolAmmo);
-        Debug.Log("Патроны автомат: " + RifleAmmo);
-        Debug.Log("Патроны Дробовик: " + ShotgunAmmo);
+
+        Debug.Log("Патроны Дробовик:" + ShotgunAmmo);
+        Debug.Log("Патроны Винтовка:" + RifleAmmo);
+        Debug.Log("Патроны Пистолет:" + PistolAmmo);
 
     }
     private void FirePistol(Vector2 dir) {
@@ -207,31 +217,9 @@ public class GunPivotScript : MonoBehaviour
     public Vector2 GetDir() {
         return dir;
     }
-    /*private void ReloadShotgun()
-    {
-        while (ShotgunMagazine <= ShotgunMagazineMax)
-        {
-            if (ShotgunMagazine == ShotgunMagazineMax && NextAmmo)
-            {
-                nextReloadTime = Time.time + 0.1f;
-                IsBusy = false;
-                break;
-                NextAmmo = true;
-            }
-            else if (NextAmmo)
-            {
-                ShotgunMagazine += 1;
-                ShotgunAmmo -= 1;
-                NextAmmo = false;
-                Invoke("NextAmmoFunc", 0.3f);
-            }
-
-        }
-
-    }
-    */
     private void ReloadShotgun()
     {
+        IsBusy = true;
         if (ShotgunMagazine < ShotgunMagazineMax && ShotgunAmmo > 0)
         {
             arm.ShotgunReloadAnim(0.2f);
