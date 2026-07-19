@@ -109,7 +109,7 @@ public class GunScript : MonoBehaviour
     private void StopShotShotgun()
     {
         spriteRenderer.sprite = Gun_shotgun;
-        Invoke("LoadShotgun", 0.4f);
+        Invoke("LoadShotgun", 0.2f);
     }
 
     private void LoadShotgun()

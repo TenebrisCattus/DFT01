@@ -16,6 +16,7 @@ public class GunPivotScript : MonoBehaviour
     [SerializeField] static private int RifleMagazineMax = 30;
     // Shotgun
     [SerializeField] static private int ShotgunMagazineMax = 6;
+    [SerializeField] private float ShotgunFireDelay = 0.6f;
     //Inventory
     [SerializeField] public static int RifleAmmoMax = 90;
     [SerializeField] public static int PistolAmmoMax = 24;
@@ -104,7 +105,7 @@ public class GunPivotScript : MonoBehaviour
         else if ((Weapon == "wpn_shotgun") && (Input.GetAxis("Fire1") > 0) && (Time.time >= nextFireTime) && !IsBusy)
         {
             FireShotgun(dir);
-            nextFireTime = Time.time + 0.9f;
+            nextFireTime = Time.time + ShotgunFireDelay;
         }
 
         if (Input.GetAxis("Reload") > 0 && !IsBusy)
