@@ -47,7 +47,6 @@ public class PlayerMainScript : MonoBehaviour
     }
     private void Update()
     {
-        Debug.Log("HP " + HP);
         moveInput.x = Input.GetAxis("Horizontal");
         moveInput.y = Input.GetAxis("Vertical");
         if (moveInput.sqrMagnitude > 1)

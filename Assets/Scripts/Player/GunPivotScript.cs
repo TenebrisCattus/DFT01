@@ -20,7 +20,7 @@ public class GunPivotScript : MonoBehaviour
     [SerializeField] public static int RifleAmmoMax = 90;
     [SerializeField] public static int PistolAmmoMax = 24;
     [SerializeField] public static int ShotgunAmmoMax = 36;
-    [SerializeField] private string Weapon = "wpn_pistol";
+    [SerializeField] public string Weapon = "wpn_pistol";
 
     //Sounds
     [SerializeField] private AudioClip FirePistolSound;
