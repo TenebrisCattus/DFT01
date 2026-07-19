@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6955166474031281000}
   m_Layer: 7
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -521,3 +521,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ArmsPivotScript
   MotherEnemy: {fileID: -7552715256361380094}
+  isshield: 0

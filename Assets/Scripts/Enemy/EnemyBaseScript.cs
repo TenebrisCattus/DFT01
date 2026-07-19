@@ -44,11 +44,9 @@ public class EnemyBaseScript : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void DamageDeal(float damage)
     {
-        if (collision.gameObject.CompareTag("PlayerBullet")) {
-            HP -= 0.5f;
-        }
+        HP -= damage;
     }
 
     void Death() { 
