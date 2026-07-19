@@ -1,6 +1,7 @@
 using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerMainScript : MonoBehaviour
 {
@@ -105,7 +106,7 @@ public class PlayerMainScript : MonoBehaviour
 
     void Death()
     {
-        Destroy(gameObject);
+        SceneManager.LoadScene("SampleScene");
     }
 
     private void FixedUpdate()
