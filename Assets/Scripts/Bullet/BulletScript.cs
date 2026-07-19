@@ -18,7 +18,11 @@ public class BulletScript : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter2D() {
+    private void OnCollisionEnter2D(Collision2D collision) {
+        if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("EnemyMelee"))
+        {
+            collision.gameObject.GetComponent<EnemyBaseScript>().DamageDeal(0.5f);
+        }
         Destroy(gameObject, 0.01f);
     }
 }
