@@ -21,12 +21,22 @@ public class PlayerMainScript : MonoBehaviour
     public bool FullPistol;
 
 
-
     private Rigidbody2D rb;
     private Vector2 moveInput;
     private Animator mainAnim;
     private float DamageDelay;
     public int HP = StartHP;
+
+    public string wea;
+    public int pimag;
+    public int piall;
+    public int rimag;
+    public int riall;
+    public int shmag;
+    public int shall;
+
+    public int score = 0;
+    public int highscore;
 
     public static PlayerMainScript Game_player { get; private set; }
 
@@ -43,11 +53,19 @@ public class PlayerMainScript : MonoBehaviour
     }
     private void Start()
     {
+        highscore = PlayerPrefs.GetInt("Score");
         rb = GetComponent<Rigidbody2D>();
         mainAnim =rbSprite.GetComponent<Animator>();
     }
     private void Update()
     {
+        wea = GunSystem.Weapon;
+        pimag = GunSystem.PistolMagazine;
+        piall = GunSystem.PistolAmmo;
+        rimag = GunSystem.RifleMagazine;
+        riall = GunSystem.RifleAmmo;
+        shmag = GunSystem.ShotgunMagazine;
+        shall = GunSystem.ShotgunAmmo;
         moveInput.x = Input.GetAxis("Horizontal");
         moveInput.y = Input.GetAxis("Vertical");
         if (moveInput.sqrMagnitude > 1)
@@ -105,7 +123,11 @@ public class PlayerMainScript : MonoBehaviour
     
 
     void Death()
-    {
+    {   
+        if (score > highscore)
+        {
+            PlayerPrefs.SetInt("Score", score);
+        }
         SceneManager.LoadScene("SampleScene");
     }
 

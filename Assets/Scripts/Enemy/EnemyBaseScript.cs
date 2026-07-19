@@ -49,7 +49,8 @@ public class EnemyBaseScript : MonoBehaviour
         HP -= damage;
     }
 
-    void Death() { 
+    void Death() {
+        PlayerMainScript.Game_player.score += 100;
         Destroy(gameObject);
     }
 

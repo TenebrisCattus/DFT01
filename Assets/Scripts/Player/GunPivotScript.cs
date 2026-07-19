@@ -40,9 +40,9 @@ public class GunPivotScript : MonoBehaviour
 
     private float nextFireTime;
     private float nextReloadTime;
-    private int PistolMagazine = PistolMagazineMax;
-    private int RifleMagazine = RifleMagazineMax;
-    private int ShotgunMagazine = ShotgunMagazineMax;
+    public int PistolMagazine = PistolMagazineMax;
+    public int RifleMagazine = RifleMagazineMax;
+    public int ShotgunMagazine = ShotgunMagazineMax;
     private Vector2 dir;
     private Animator GunAnim;
     private float ToLoad;
@@ -138,9 +138,9 @@ public class GunPivotScript : MonoBehaviour
 
         }
 
-        Debug.Log("Патроны Дробовик:" + ShotgunAmmo);
-        Debug.Log("Патроны Винтовка:" + RifleAmmo);
-        Debug.Log("Патроны Пистолет:" + PistolAmmo);
+        //Debug.Log("Патроны Дробовик:" + ShotgunAmmo);
+        //Debug.Log("Патроны Винтовка:" + RifleAmmo);
+        //Debug.Log("Патроны Пистолет:" + PistolAmmo);
 
     }
     private void FirePistol(Vector2 dir) {

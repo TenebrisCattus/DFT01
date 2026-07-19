@@ -70,8 +70,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 2}
+  m_Offset: {x: 0.012223899, y: -0.36916286}
+  m_Size: {x: 0.59416544, y: 1.036754}
   m_Direction: 0
 --- !u!50 &3697101931094461084
 Rigidbody2D:
@@ -118,7 +118,19 @@ MonoBehaviour:
   LookDown: {fileID: -1965253477447152703, guid: f608de95bf6c8334f86739d5d39f8007, type: 3}
   rbSprite: {fileID: 559504516029959044}
   GunSystem: {fileID: 8623805874262567349}
+  FullShotgun: 0
+  FullRifle: 0
+  FullPistol: 0
   HP: 100
+  wea: 
+  pimag: 0
+  piall: 0
+  rimag: 0
+  riall: 0
+  shmag: 0
+  shall: 0
+  score: 0
+  highscore: 0
 --- !u!1 &2146873482032553573
 GameObject:
   m_ObjectHideFlags: 0
@@ -830,6 +842,7 @@ MonoBehaviour:
   arm: {fileID: 7426510322071732104}
   PistolFireDelay: 0.2
   RifleFireDelay: 0.1
+  ShotgunFireDelay: 0.6
   Weapon: wpn_pistol
   FirePistolSound: {fileID: 8300000, guid: 40b8df1652f4854439fb65fb812d06b0, type: 3}
   FireRifleSound: {fileID: 8300000, guid: 97bed22f5c8aa084881a22803d84b7d6, type: 3}
@@ -837,6 +850,9 @@ MonoBehaviour:
   RifleAmmo: 90
   PistolAmmo: 24
   ShotgunAmmo: 36
+  PistolMagazine: 8
+  RifleMagazine: 30
+  ShotgunMagazine: 6
 --- !u!82 &3295480951527543810
 AudioSource:
   m_ObjectHideFlags: 0
